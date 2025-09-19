@@ -1,0 +1,86 @@
+/* Figma Styles of your File */
+:root {
+  /* Colors */
+  --lidforce-colors-main-color: #1a839a;
+  --lidforce-colors-white-pure: #fdfeff;
+  --lidforce-colors-accent-primary: #35b6d3;
+  --lidforce-colors-bg-surface: #0a0b11;
+  --lidforce-colors-grey-neutral: #d0d4df;
+  --lidforce-colors-dark-deep: #2e2e30;
+  --lidforce-colors-red-alert: #f94b4b;
+  --lidforce-colors-green-success: #50d313;
+  --lidforce-colors-grey-soft: rgba(202, 202, 202, 0.15);
+  --lidforce-colors-text-muted: #747786;
+  --elite-house-colors-white-10: rgba(245, 245, 245, 0.1);
+  --elite-house-colors-white-color: #fafafa;
+  --elite-house-colors-bg-surface: #0a0b11;
+  --elite-house-colors-accent-color: #ff7f00;
+  --elite-house-colors-grey-color: #b1b1b1;
+  --elite-house-colors-grey-80: rgba(33, 33, 33, 0.8);
+  --elite-house-colors-blue-80: rgba(21, 59, 106, 0.8);
+
+  /* Fonts */
+  --lidforce-45px-headingxl-font-family: DrukWideCyr-Bold, sans-serif;
+  --lidforce-45px-headingxl-font-size: 45px;
+  --lidforce-45px-headingxl-line-height: normal;
+  --lidforce-45px-headingxl-font-weight: 700;
+  --lidforce-45px-headingxl-font-style: normal;
+  --lidforce-20px-headings-font-family: DrukWideCyr-Bold, sans-serif;
+  --lidforce-20px-headings-font-size: 20px;
+  --lidforce-20px-headings-line-height: normal;
+  --lidforce-20px-headings-font-weight: 700;
+  --lidforce-20px-headings-font-style: normal;
+  --lidforce-20px-bodyl-font-family: Montserrat-Medium, sans-serif;
+  --lidforce-20px-bodyl-font-size: 20px;
+  --lidforce-20px-bodyl-line-height: 130%;
+  --lidforce-20px-bodyl-font-weight: 500;
+  --lidforce-20px-bodyl-font-style: normal;
+  --lidforce-18px-button-font-family: Montserrat-Medium, sans-serif;
+  --lidforce-18px-button-font-size: 18px;
+  --lidforce-18px-button-line-height: 130%;
+  --lidforce-18px-button-font-weight: 500;
+  --lidforce-18px-button-font-style: normal;
+  --lidforce-16px-bodys-font-family: Montserrat-Regular, sans-serif;
+  --lidforce-16px-bodys-font-size: 16px;
+  --lidforce-16px-bodys-line-height: normal;
+  --lidforce-16px-bodys-font-weight: 400;
+  --lidforce-16px-bodys-font-style: normal;
+  --lidforce-16px-captionm-font-family: Montserrat-SemiBold, sans-serif;
+  --lidforce-16px-captionm-font-size: 16px;
+  --lidforce-16px-captionm-line-height: normal;
+  --lidforce-16px-captionm-font-weight: 600;
+  --lidforce-16px-captionm-font-style: normal;
+  --lidforce-16px-bodyitalic-font-family: Montserrat-Italic, sans-serif;
+  --lidforce-16px-bodyitalic-font-size: 16px;
+  --lidforce-16px-bodyitalic-line-height: normal;
+  --lidforce-16px-bodyitalic-font-weight: 400;
+  --lidforce-16px-bodyitalic-font-style: italic;
+  --elitehouse-50px-heading-1-font-family: RoadRadio-Bold, sans-serif;
+  --elitehouse-50px-heading-1-font-size: 80px;
+  --elitehouse-50px-heading-1-line-height: 80px;
+  --elitehouse-50px-heading-1-font-weight: 700;
+  --elitehouse-50px-heading-1-font-style: normal;
+  --elitehouse-30px-heading-2-font-family: RoadRadio-Bold, sans-serif;
+  --elitehouse-30px-heading-2-font-size: 30px;
+  --elitehouse-30px-heading-2-line-height: 30px;
+  --elitehouse-30px-heading-2-font-weight: 700;
+  --elitehouse-30px-heading-2-font-style: normal;
+  --elitehouse-16px-subtitle-font-family: Inter-Medium, sans-serif;
+  --elitehouse-16px-subtitle-font-size: 16px;
+  --elitehouse-16px-subtitle-line-height: 20px;
+  --elitehouse-16px-subtitle-font-weight: 500;
+  --elitehouse-16px-subtitle-font-style: normal;
+  --elitehouse-15px-button-font-family: Inter-SemiBold, sans-serif;
+  --elitehouse-15px-button-font-size: 15px;
+  --elitehouse-15px-button-line-height: 20px;
+  --elitehouse-15px-button-font-weight: 600;
+  --elitehouse-15px-button-font-style: normal;
+  --elitehouse-14px-maintxt-font-family: Inter-Regular, sans-serif;
+  --elitehouse-14px-maintxt-font-size: 14px;
+  --elitehouse-14px-maintxt-line-height: 20px;
+  --elitehouse-14px-maintxt-font-weight: 400;
+  --elitehouse-14px-maintxt-font-style: normal;
+
+  /* Effects */
+}
+/* Figma Color Variables of your File */
