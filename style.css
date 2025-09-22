@@ -202,10 +202,10 @@ html, body {
   gap: 40px;
 }
 .image-3779611 {
-  width: 1626px;
+  width: 100%;
   height: 695px;
   position: absolute;
-  left: -176px;
+  left: 0px;
   top: 0px;
   object-fit: cover;
 }
@@ -1536,7 +1536,7 @@ html, body {
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  padding-top: 100px;
+  padding-top: 230px;
 }
 .beautiful-vertical-shot-long-mountain-peak-covered-green-grass-perfect-wallpaper-1 {
   width: 519px;
@@ -1625,7 +1625,7 @@ html, body {
   text-wrap: nowrap;
   left: 50%;
   translate: -50%;
-  top: 277px;
+  top: 377px;
 }
 .txt2 {
   display: flex;
@@ -1635,7 +1635,7 @@ html, body {
   justify-content: flex-start;
   width: 343px;
   left: 16px;
-  top: 137px;
+  top: 167px;
 }
 .header10 {
   color: var(--color-black-eco, #2d2d2d);
