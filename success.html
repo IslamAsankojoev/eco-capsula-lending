@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    @font-face {
+      font-family: 'BebasNeue';
+      src: url('./bebas_neue/BebasNeue Regular.otf') format('opentype');
+      font-weight: 400;
+      font-style: normal;
+    }
+
+    @font-face {
+      font-family: 'BebasNeue';
+      src: url('./bebas_neue/BebasNeue Bold.otf') format('opentype');
+      font-weight: 700;
+      font-style: normal;
+    }
+
+    @font-face {
+      font-family: 'BebasNeue';
+      src: url('./bebas_neue/BebasNeue Book.otf') format('opentype');
+      font-weight: 500;
+      font-style: normal;
+    }
+
+    @font-face {
+      font-family: 'BebasNeue';
+      src: url('./bebas_neue/BebasNeue Thin.otf') format('opentype');
+      font-weight: 100;
+      font-style: normal;
+    }
+
+    /* Gilroy Fonts */
+    @font-face {
+      font-family: 'Gilroy';
+      src: url('./gilroy/Gilroy-Regular.ttf') format('truetype');
+      font-weight: 400;
+      font-style: normal;
+    }
+
+    @font-face {
+      font-family: 'Gilroy';
+      src: url('./gilroy/Gilroy-RegularItalic.ttf') format('truetype');
+      font-weight: 400;
+      font-style: italic;
+    }
+
+    @font-face {
+      font-family: 'Gilroy';
+      src: url('./gilroy/Gilroy-Thin.ttf') format('truetype');
+      font-weight: 100;
+      font-style: normal;
+    }
+
+    @font-face {
+      font-family: 'Gilroy';
+      src: url('./gilroy/Gilroy-ThinItalic.ttf') format('truetype');
+      font-weight: 100;
+      font-style: italic;
+    }
+
+    @font-face {
+      font-family: 'Gilroy';
+      src: url('./gilroy/Gilroy-UltraLight.ttf') format('truetype');
+      font-weight: 200;
+      font-style: normal;
+    }
+
+    @font-face {
+      font-family: 'Gilroy';
+      src: url('./gilroy/Gilroy-UltraLightItalic.ttf') format('truetype');
+      font-weight: 200;
+      font-style: italic;
+    }
+
+    @font-face {
+      font-family: 'Gilroy';
+      src: url('./gilroy/Gilroy-Light.ttf') format('truetype');
+      font-weight: 300;
+      font-style: normal;
+    }
+
+    @font-face {
+      font-family: 'Gilroy';
+      src: url('./gilroy/Gilroy-LightItalic.ttf') format('truetype');
+      font-weight: 300;
+      font-style: italic;
+    }
+
+    @font-face {
+      font-family: 'Gilroy';
+      src: url('./gilroy/Gilroy-Medium.ttf') format('truetype');
+      font-weight: 500;
+      font-style: normal;
+    }
+
+    @font-face {
+      font-family: 'Gilroy';
+      src: url('./gilroy/Gilroy-MediumItalic.ttf') format('truetype');
+      font-weight: 500;
+      font-style: italic;
+    }
+
+    @font-face {
+      font-family: 'Gilroy';
+      src: url('./gilroy/Gilroy-SemiBold.ttf') format('truetype');
+      font-weight: 600;
+      font-style: normal;
+    }
+
+    @font-face {
+      font-family: 'Gilroy';
+      src: url('./gilroy/Gilroy-SemiBoldItalic.ttf') format('truetype');
+      font-weight: 600;
+      font-style: italic;
+    }
+
+    @font-face {
+      font-family: 'Gilroy';
+      src: url('./gilroy/Gilroy-Bold.ttf') format('truetype');
+      font-weight: 700;
+      font-style: normal;
+    }
+
+    @font-face {
+      font-family: 'Gilroy';
+      src: url('./gilroy/Gilroy-BoldItalic.ttf') format('truetype');
+      font-weight: 700;
+      font-style: italic;
+    }
+
+    @font-face {
+      font-family: 'Gilroy';
+      src: url('./gilroy/Gilroy-ExtraBold.ttf') format('truetype');
+      font-weight: 800;
+      font-style: normal;
+    }
+
+    @font-face {
+      font-family: 'Gilroy';
+      src: url('./gilroy/Gilroy-ExtraBoldItalic.ttf') format('truetype');
+      font-weight: 800;
+      font-style: italic;
+    }
+
+    @font-face {
+      font-family: 'Gilroy';
+      src: url('./gilroy/Gilroy-Heavy.ttf') format('truetype');
+      font-weight: 900;
+      font-style: normal;
+    }
+
+    @font-face {
+      font-family: 'Gilroy';
+      src: url('./gilroy/Gilroy-HeavyItalic.ttf') format('truetype');
+      font-weight: 900;
+      font-style: italic;
+    }
+
+    @font-face {
+      font-family: 'Gilroy';
+      src: url('./gilroy/Gilroy-Black.ttf') format('truetype');
+      font-weight: 950;
+      font-style: normal;
+    }
+
+    @font-face {
+      font-family: 'Gilroy';
+      src: url('./gilroy/Gilroy-BlackItalic.ttf') format('truetype');
+      font-weight: 950;
+      font-style: italic;
+    }
+
+    .success-popup {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .success-popup.active {
+      display: flex;
+    }
+
+    .success-popup-content {
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      align-items: center;
+      justify-content: center;
+      width: 300px;
+      position: relative;
+      text-align: center;
+    }
+
+    .success-popup-content-title {
+      font-size: 20px;
+      font-weight: bold;
+      font-family: 'Gilroy', sans-serif;
+    }
+
+    .success-popup-content-description {
+      font-size: 16px;
+      font-family: 'Gilroy', sans-serif;
+    }
+
+    .success-popup-content-check {
+      width: 24px;
+      height: 24px;
+      color: #50d313;
+    }
+
+    .success-popup-content-close {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      cursor: pointer;
+    }
+  </style>
+  <body>
+    <div class="success-popup">
+      <div class="success-popup-content">
+        <svg
+          class="success-popup-content-close"
+          onclick="closeSuccessPopup()"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="lucide lucide-x-icon lucide-x"
+        >
+          <path d="M18 6 6 18" />
+          <path d="m6 6 12 12" />
+        </svg>
+        <svg
+          class="success-popup-content-check"
+          xmlns="http://www.w3.org/2000/svg"
+          width="228"
+          height="228"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="lucide lucide-badge-check-icon lucide-badge-check"
+        >
+          <path
+            d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z"
+          />
+          <path d="m9 12 2 2 4-4" />
+        </svg>
+        <div class="success-popup-content-title">Вы успешно оставили заявку!</div>
+        <div class="success-popup-content-description">
+          Наши менеджеры свяжутся с вами в ближайшее время, а пока что вы можете посмотреть наши
+          капсулы в <a href="https://instagram.com/ecocapsule.kg" target="_blank">@ecocapsule.kg</a>
+        </div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>

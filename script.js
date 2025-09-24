@@ -1,11 +1,11 @@
 function showSuccessPopup() {
   const successPopup = document.querySelector(".success-popup")
-  successPopup.classList.add("active")
+  window.location.href = "success.html"
 }
 
 function closeSuccessPopup() {
   const successPopup = document.querySelector(".success-popup")
-  successPopup.classList.remove("active")
+  window.location.href = "index.html"
 }
 
 window.addEventListener("message", (event) => {
